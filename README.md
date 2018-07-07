@@ -1,9 +1,10 @@
-# abp-appfactory-excelexporter
-ASP.NET Boilerplate module for exporting any IEnumerable to Excel.
+# abp-appfactory-excelgenerator
+ASP.NET Boilerplate module for generating and exporting any IEnumerable to Excel.
+
+Wraps [EPPlus](https://github.com/JanKallman/EPPlus) into an ASP.NET Boilerplate module and saves the file using a [Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/) provider module.
 
 ## Installation
-Add a reference in you application module to the Nuget package (https://www.nuget.org/packages/Abp.AppFactory.Interfaces)[Abp.AppFactory.Interfaces]
-
+Add a reference to the Nuget package [Abp.AppFactory.Interfaces](https://www.nuget.org/packages/Abp.AppFactory.Interfaces) where you want to inject the ExcelGenerator and inject the interface **IExcelGenerator**.
 
 ## Usage
 ```csharp
